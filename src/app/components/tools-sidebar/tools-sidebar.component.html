@@ -444,7 +444,30 @@
     <div class="gp_modal" id="suitability">
         <div class="container-fluid">
             <ngb-tabset type="pills" justify="justified">
-                <ngb-tab>
+              <ngb-tab>
+                <ng-template ngbTabTitle>
+                  <mdb-icon size="2x" fas icon="draw-polygon"></mdb-icon>
+                </ng-template>
+                <ng-template ngbTabContent class="px-2 py-2">
+                  <div class="form-group p-2">
+                    <h6 class="results-text"><label class="text-uppercase">select study area</label></h6>
+                    <p-dropdown placeholder="Select study area" [baseZIndex]="2500"
+                       appendTo="body"></p-dropdown>
+                  </div>
+                    <div class="p-2">
+                        <div class="py-2 results-text">
+                          <p-checkbox label="Filter 1"></p-checkbox>
+                        </div>
+                        <div class="py-2 results-text">
+                          <p-checkbox label="Filter 2"></p-checkbox>
+                        </div>
+                        <div class="py-2 results-text">
+                          <p-checkbox label="Filter 3"></p-checkbox>
+                        </div>
+                    </div>
+                </ng-template>
+              </ngb-tab>  
+              <ngb-tab>
                     <ng-template ngbTabTitle>
                         <mdb-icon size="2x" fas icon="wrench"></mdb-icon>
                     </ng-template>
