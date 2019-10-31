@@ -23,6 +23,8 @@ import {DialogModule} from 'primeng/dialog';
 import {SliderModule} from 'primeng/slider';
 import {TreeModule} from 'primeng/tree';
 import {TreeDragDropService} from 'primeng/api';
+import {DropdownModule} from 'primeng/dropdown';
+import {CheckboxModule} from 'primeng/checkbox';
 
 import { NgxDonutChartModule } from 'ngx-doughnut-chart';
 import { MessageService } from './services/message/MessageService';
@@ -49,6 +51,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SidebarModule,
     DialogModule,
     SliderModule,
+    DropdownModule,
+    CheckboxModule,
     NgxDonutChartModule,
     TreeModule,
     HttpClientModule
